@@ -10,7 +10,7 @@ from telegram.ext.webhook import WebhookServer
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 ELEVENLABS_API_KEY = os.environ.get("ELEVENLABS_API_KEY")
 VOICE_ID = "TxGEqnHWrfWFTfGW9XjX"
-WEBHOOK_HOST = os.environ.get("WEBHOOK_HOST")  # пример: "https://your-app-name.onrender.com"
+WEBHOOK_HOST = os.environ.get("WEBHOOK_HOST")  
 
 if not TELEGRAM_TOKEN:
     raise ValueError("TELEGRAM_TOKEN is not set")

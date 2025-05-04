@@ -11,4 +11,4 @@ services:
       - key: ELEVENLABS_API_KEY
         value: TO_BE_SET_IN_RENDER
       - key: WEBHOOK_HOST
-        value: https://your-app-name.onrender.com  # замени на свой домен
+        value: https://nativeshadowbot.onrender.com
