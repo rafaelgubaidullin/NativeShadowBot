@@ -21,6 +21,12 @@ TELEGRAM_TOKEN = os.environ.get("7681510836:AAGWN6z3QohN_sqFBFnTx_rTmxG1Ge2YqvE"
 ELEVENLABS_API_KEY = os.environ.get("sk_a15f49691c4b11b1a761f56dfce21676e7d5ba7842fd5df0")
 VOICE_ID = "TxGEqnHWrfWFTfGW9XjX"
 
+if not TELEGRAM_TOKEN:
+    raise ValueError("TELEGRAM_TOKEN is not set")
+
+if not ELEVENLABS_API_KEY:
+    raise ValueError("ELEVENLABS_API_KEY is not set")
+
 # --- SPEECH GENERATION ---
 def generate_speech(text: str) -> bytes:
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
