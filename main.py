@@ -17,8 +17,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 # --- CONFIG ---
-TELEGRAM_TOKEN = os.environ.get("7681510836:AAGWN6z3QohN_sqFBFnTx_rTmxG1Ge2YqvE")
-ELEVENLABS_API_KEY = os.environ.get("sk_a15f49691c4b11b1a761f56dfce21676e7d5ba7842fd5df0")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+ELEVENLABS_API_KEY = os.environ.get("ELEVENLABS_API_KEY")
 VOICE_ID = "TxGEqnHWrfWFTfGW9XjX"
 
 if not TELEGRAM_TOKEN:
